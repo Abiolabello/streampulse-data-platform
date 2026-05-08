@@ -20,5 +20,8 @@ services:
     depends_on:
       - postgres
 
+    env_file:
+      - .env
+
 volumes:
   postgres_data:
